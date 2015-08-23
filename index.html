@@ -1,0 +1,53 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+<link rel="shortcut icon" href="sys/favicon.png" >
+<title>index</title>
+<link rel="stylesheet" type="text/css" href="sys/jquery.mobile-1.4.5.min.css">
+<script src="sys/jquery.min.js"></script>
+<script src="sys/jquery.mobile-1.4.5.min.js"></script>
+<script src="sys/potd.js"></script>
+<script src="sys/default.js"></script>
+</head>
+<body>
+<div data-role="page" id="page" style="background-color:#2A2A2A">
+  <div data-role="header" data-theme="b" align="center">
+  	<img src="sys/arris.png" width="300">
+  </div>
+  <div data-role="content" data-theme="b">
+    <div align="center">
+      <fieldset data-role="controlgroup" data-type="horizontal">
+      	<h3>Semilla</h3>
+        <input type="radio" name="seed" id="seed_0" checked onClick="def()"/>
+        <label for="seed_0">Default</label>
+        <input type="radio" name="seed" id="seed_1" onClick="chan()" />
+        <label for="seed_1">Cambiar</label>
+      </fieldset>
+    </div>
+    <input type="text" id="seedtxt" style="display:none">
+    <div data-role="fieldcontain">
+      <label for="date">Fecha Inicio:</label>
+      <input type="date" id="inicio">
+    </div>
+    <div data-role="fieldcontain">
+      <label for="date">Fecha Fin:</label>
+      <input type="date" id="fin">
+    </div>
+<input type="button" value="Generar" id="generar" onClick="gen()">
+<hr>
+	<div id="keys">
+    </div>
+	 
+    
+    
+    
+  </div>
+</div>
+
+
+
+
+</body>
+</html>
