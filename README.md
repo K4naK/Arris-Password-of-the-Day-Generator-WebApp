@@ -1,4 +1,4 @@
-# arrispotd
+# Arris Password of the Day Generator - WebApp
 
 Ejemplo: http://arrispwod.vzpla.net/
 
